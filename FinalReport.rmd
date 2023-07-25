@@ -84,4 +84,4 @@ According to the Fisher's exact test, you are three times more likely to get aid
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+A  preventative aides drug known as the triUmpsal, is under test in clinical trials. Researched is based on to see how effective this drug is on drug users. According to the research conducted, the data shows that vaccines are found to be effective in preventing aids in drug users. The null hypothesis is rejected due tot he small quantity of p value from the Chi-squared test. The fisher exact test supports the ratio that a drug user is 0.35 more likely to get aids from placebo. 
