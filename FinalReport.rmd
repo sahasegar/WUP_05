@@ -8,6 +8,7 @@ output: html_document
 ```{r include=FALSE,echo=FALSE}
 require(tidyverse)
 require(tigerstats)
+require(dplyr)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 ```
 
@@ -27,15 +28,30 @@ Data for this study came from a clinical trial for the drug triUmpsal.
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
+One graphical method chosen is various bar plots. The numerical method used is a percentage table Chi-square test is used as the inferential test. The categorical~categorical is used because the question is about drug users, we have to subset the data to include specifically the drug users. 
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
+
+```{r}
+DruggieData = filter(triUmp, DrugUser == "yes")
+```
+
+
 
 ## Descriptive Results
 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
+
+```{r}
+barchartGC(~infected + treatment,data=DruggieData)
+barchartGC(~infected + treatment,data=DruggieData, type="percent")
+
+```
+According to the bar plot, There is a clear different observed that the vaccine did protect drug users from obtaining aids. Among the ones who did get aids were influenced by placebo. 
 
 ### Numerical Descriptive Results
 
