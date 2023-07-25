@@ -74,9 +74,14 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 According to the Chi- squared test, The p value is approximately 000000.12
-According to the Fisher's exact test, you are three times more likely to get aids.  (0.3534128)
+According to the Fisher's exact test, you are three times more likely to get aids. (0.3534128)
+ The p value= 00000004.23 (0.3534128)
+ 
+ The p value is so small, that I reject the null hypothesis. Therefore, the vaccine is effective in preventing aids in drug users. Based on the fisher exact test, the ratio shows that you are 0.35 more likely to get aids than someone from placebo.
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
